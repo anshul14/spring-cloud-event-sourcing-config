@@ -1,4 +1,8 @@
-spring.profiles.active: development
+spring:
+  profiles:
+    active: development
+  server:
+    port: 8761
 ---
 spring:
   profiles: cloud

@@ -1,6 +1,8 @@
 spring:
   profiles:
     active: development
+  server:
+    port: 9685
 ---
 spring:
   profiles: cloud
