@@ -14,7 +14,7 @@ spring:
     host: 192.168.99.100
     port: 6379
   datasource:
-    url: jdbc:mysql://192.168.99.100:3306/dev?useSSL=false
+    url: jdbc:mysql://localhost:3306/catalogv?useSSL=false
     username: root
     password: dbpass
     initialize: false
@@ -33,7 +33,7 @@ spring:
     host: redis
     port: 6379
   datasource:
-    url: jdbc:mysql://mysql:3306/dev?useSSL=false
+    url: jdbc:mysql://localhost:3306/catalog?useSSL=false
     username: root
     password: dbpass
     initialize: true
