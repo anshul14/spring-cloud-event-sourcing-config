@@ -5,18 +5,25 @@ spring:
   neo4j:
     host: ${SPRING_NEO4J_HOST:localhost}
     port: ${SPRING_NEO4J_PORT:7474}
+    username: neo4j
+    password: Veer@123
 ---
 spring:
   profiles: development
   neo4j:
     host: ${SPRING_NEO4J_HOST:localhost}
     port: ${SPRING_NEO4J_PORT:7474}
+    username: neo4j
+    password: Veer@123
+
 ---
 spring:
   profiles: docker
   neo4j:
-    host: ${SPRING_NEO4J_HOST:neo4j}
+    host: ${SPRING_NEO4J_HOST:localhost}
     port: ${SPRING_NEO4J_PORT:7474}
+    username: neo4j
+    password: Veer@123
 eureka:
   instance:
     prefer-ip-address: true
@@ -31,6 +38,8 @@ spring:
   neo4j:
     host: ${SPRING_NEO4J_HOST:localhost}
     port: ${SPRING_NEO4J_PORT:7474}
+    username: neo4j
+    password: Veer@123
 eureka:
   client:
     enabled: false
