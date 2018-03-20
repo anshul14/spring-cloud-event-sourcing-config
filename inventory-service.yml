@@ -1,8 +1,7 @@
 spring:
   profiles:
     active: development
-  server:
-    port: 8761
+
 ---
 spring:
   profiles: cloud
@@ -47,3 +46,7 @@ spring:
 eureka:
   client:
     enabled: false
+
+---
+server:
+    port: 8761

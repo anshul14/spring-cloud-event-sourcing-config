@@ -1,8 +1,7 @@
 spring:
   profiles:
     active: development
-  server:
-    port: 9632
+
 ---
 spring:
   profiles: cloud
@@ -57,3 +56,7 @@ spring:
     database: H2
   datasource:
     initialize: false
+---
+
+server:
+    port: 9632
